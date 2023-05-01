@@ -7,14 +7,24 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
+      meta: {
+        layout: 'default-layout',
+        title: 'home page'
+      },
       component: HomeView
     },
     {
       path: '/about',
       name: 'about',
+      meta: {
+        layout: 'dashboard-layout',
+        title: 'about page'
+      },
       component: () => import('../views/AboutView.vue')
     }
   ]
 })
-
+router.afterEach((to) => {
+  document.title = to.meta.title || 'alwan'
+})
 export default router
