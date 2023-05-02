@@ -1,26 +1,71 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import DashboardPage from '../views/DashboardPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      meta: {
-        layout: 'default-layout',
-        title: 'home page'
-      },
-      component: HomeView
-    },
-    {
-      path: '/about',
-      name: 'about',
+      name: 'dashboard',
       meta: {
         layout: 'dashboard-layout',
-        title: 'about page'
+        title: 'Dashboard Page'
       },
-      component: () => import('../views/AboutView.vue')
+      component: DashboardPage
+    },
+    {
+      path: '/tenants',
+      name: 'tenants',
+      meta: {
+        layout: 'dashboard-layout',
+        title: 'Tenants page'
+      },
+      component: () => import('../views/TenantsPage.vue')
+    },
+    {
+      path: '/angel',
+      name: 'angel',
+      meta: {
+        layout: 'dashboard-layout',
+        title: 'Angel page'
+      },
+      component: () => import('../views/AngelPage.vue')
+    },
+    {
+      path: '/units',
+      name: 'units',
+      meta: {
+        layout: 'dashboard-layout',
+        title: 'Units page'
+      },
+      component: () => import('../views/UnitsPage.vue')
+    },
+    {
+      path: '/contracts',
+      name: 'contracts',
+      meta: {
+        layout: 'dashboard-layout',
+        title: 'Contracts page'
+      },
+      component: () => import('../views/ContractsPage.vue')
+    },
+    {
+      path: '/reports',
+      name: 'reports',
+      meta: {
+        layout: 'dashboard-layout',
+        title: 'Reports page'
+      },
+      component: () => import('../views/ReportsPage.vue')
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      meta: {
+        layout: 'dashboard-layout',
+        title: 'Settings page'
+      },
+      component: () => import('../views/SettingsPage.vue')
     }
   ]
 })

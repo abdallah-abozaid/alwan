@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
+  <div class="ar">
+    <component :is="layout">
+      <RouterView />
+    </component>
   </div>
-  <component :is="layout">
-    <RouterView />
-  </component>
 </template>
 
 <script setup>
 import { computed } from 'vue'
-import { RouterLink, RouterView, useRoute } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 const route = useRoute()
 
 // to give each page 'layout'
