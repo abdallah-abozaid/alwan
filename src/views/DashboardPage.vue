@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DashboardHeader title="title" />
+    <DashboardHeader title="لوحة التحكم" />
     <h1>DashboardPage Page</h1>
   </div>
 </template>

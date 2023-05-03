@@ -199,7 +199,7 @@ export default {
 /* content style */
 .dashboard-layout .content {
   width: 85%;
-  padding: 1rem 1rem 0 3rem;
+  padding: 0rem 3rem 0 3rem;
   background-color: #fff;
   box-shadow: 3px 8px 10px #cecece;
   position: relative;
@@ -257,6 +257,22 @@ export default {
   }
   .dashboard-layout .content {
     width: 82%;
+    padding: 0rem 2rem 0 3rem;
+  }
+
+  .dashboard-layout .content > svg {
+    bottom: -20%;
+    left: -12%;
+  }
+  .dashboard-layout .content .pages {
+    min-height: 94vh;
+  }
+  .dashboard-layout .content .footer {
+    min-height: 6vh;
+  }
+  .dashboard-layout .content .footer p {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
   }
 }
 </style>
