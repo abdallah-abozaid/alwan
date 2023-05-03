@@ -35,9 +35,11 @@
       </div>
     </div>
     <div class="content">
-      <div class="header">header</div>
       <div class="pages"><slot /></div>
-      <div class="footer">footer</div>
+      <div class="footer">
+        <p>جميع الحقوق محفوظة لشركة ألوان الينابيع 2023</p>
+      </div>
+      <IconCircle color="#0094f6" />
     </div>
   </div>
 </template>
@@ -51,6 +53,7 @@ import IconContracts from '../components/icons/IconContracts.vue'
 import IconUnits from '../components/icons/IconUnits.vue'
 import IconPaper from '../components/icons/IconPaper.vue'
 import IconSetting from '../components/icons/IconSetting.vue'
+import IconCircle from '../components/icons/IconCircle.vue'
 import { RouterLink } from 'vue-router'
 export default {
   name: 'DashboardLayout',
@@ -63,7 +66,8 @@ export default {
     IconUnits,
     IconContracts,
     IconPaper,
-    IconSetting
+    IconSetting,
+    IconCircle
   }
 }
 </script>
@@ -194,12 +198,37 @@ export default {
 
 /* content style */
 .dashboard-layout .content {
-  width: 82%;
-  padding: 1rem 2rem;
+  width: 85%;
+  padding: 1rem 1rem 0 3rem;
   background-color: #fff;
   box-shadow: 3px 8px 10px #cecece;
+  position: relative;
 }
-
+.dashboard-layout .content > svg {
+  position: absolute;
+  bottom: -10%;
+  left: -7%;
+  z-index: 1;
+}
+.dashboard-layout .content .pages {
+  min-height: 93vh;
+  background-color: #fff;
+  z-index: 2;
+  border-bottom: 1px solid #e0e0e0;
+  border-bottom-left-radius: 1rem;
+  padding: 1rem;
+}
+.dashboard-layout .content .footer {
+  min-height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+.dashboard-layout .content .footer p {
+  margin-bottom: 0.7rem;
+}
 /* responsive for labtop screens */
 @media (max-width: 1550px) {
   /* sidebar style */
@@ -225,6 +254,9 @@ export default {
   }
   .dashboard-layout .sidebar .logout button {
     font-size: 0.95rem;
+  }
+  .dashboard-layout .content {
+    width: 82%;
   }
 }
 </style>
