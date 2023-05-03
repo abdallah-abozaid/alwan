@@ -72,11 +72,11 @@ export default {
 @media (max-width: 1550px) {
   .dashboard-header {
     border-bottom: 0.1rem solid #e7e7e7;
-    margin-bottom: 1.2rem;
-    padding-bottom: 0.7rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
   .dashboard-header > p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .dashboard-header .lang {

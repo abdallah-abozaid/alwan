@@ -35,11 +35,13 @@
       </div>
     </div>
     <div class="content">
-      <div class="pages"><slot /></div>
-      <div class="footer">
-        <p>جميع الحقوق محفوظة لشركة ألوان الينابيع 2023</p>
+      <div class="wrapper">
+        <div class="pages"><slot /></div>
+        <div class="footer">
+          <p>جميع الحقوق محفوظة لشركة ألوان الينابيع 2023</p>
+        </div>
+        <IconCircle color="#0094f6" />
       </div>
-      <IconCircle color="#0094f6" />
     </div>
   </div>
 </template>
@@ -199,12 +201,20 @@ export default {
 /* content style */
 .dashboard-layout .content {
   width: 85%;
-  padding: 0rem 3rem 0 3rem;
-  background-color: #fff;
+  background-color: transparent;
   box-shadow: 3px 8px 10px #cecece;
+  min-height: 100vh;
+  overflow: auto;
   position: relative;
 }
-.dashboard-layout .content > svg {
+.dashboard-layout .content .wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 0rem 3rem 0 3rem;
+  background-color: #fff;
+}
+.dashboard-layout .content .wrapper > svg {
   position: absolute;
   bottom: -10%;
   left: -7%;
@@ -219,15 +229,15 @@ export default {
   padding: 1rem;
 }
 .dashboard-layout .content .footer {
-  min-height: 7vh;
+  min-height: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  z-index: 2;
+  z-index: 0;
 }
 .dashboard-layout .content .footer p {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0rem;
 }
 /* responsive for labtop screens */
 @media (max-width: 1550px) {
@@ -257,15 +267,18 @@ export default {
   }
   .dashboard-layout .content {
     width: 82%;
-    padding: 0rem 2rem 0 3rem;
+  }
+  .dashboard-layout .content .wrapper {
+    padding: 0rem 2rem 0 2rem;
   }
 
-  .dashboard-layout .content > svg {
+  .dashboard-layout .content .wrapper > svg {
     bottom: -20%;
     left: -12%;
   }
   .dashboard-layout .content .pages {
     min-height: 94vh;
+    padding: 0.5rem 1rem;
   }
   .dashboard-layout .content .footer {
     min-height: 6vh;
