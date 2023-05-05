@@ -29,11 +29,15 @@ button,
 a {
   cursor: pointer;
 }
-
+button {
+  outline: none;
+}
 a {
   text-decoration: none;
   color: var(--color-text);
 }
+
+/* ******************************************************* */
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -54,3 +58,434 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* ******************************************************* */
+/* btns styles */
+.btn-primary {
+  background-color: #3361ff;
+  border: none;
+  border-radius: 0.3rem;
+}
+.btn-secondary {
+  background-color: #e2e3e5;
+  border: none;
+  border-radius: 0.3rem;
+  color: #707070;
+}
+/* responsive for labtop screens */
+@media (max-width: 1550px) {
+  .btn-primary {
+    font-size: 0.9rem;
+  }
+  .btn-secondary {
+    font-size: 0.9rem;
+  }
+}
+/* ******************************************************* */
+/* modal styles */
+.modal-content {
+  border-radius: 0.7rem;
+}
+.modal-header {
+  background-color: #fafbfc;
+  border: none;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+.modal-header .btn-close {
+  margin-left: unset;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 0.6rem;
+}
+.modal-header .modal-title {
+  color: #6b7a99;
+  font-size: 0.95rem;
+}
+.modal-body {
+  margin-bottom: 2rem;
+}
+/* responsive for labtop screens */
+@media (max-width: 1550px) {
+  .modal-content {
+    border-radius: 0.5rem;
+  }
+  .modal-header {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .modal-header .btn-close {
+    font-size: 0.5rem;
+  }
+  .modal-header .modal-title {
+    font-size: 0.9rem;
+  }
+  .modal-body {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ******************************************************* */
+/* input style */
+.input {
+  margin-bottom: 1.5rem;
+}
+.input label {
+  display: block;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+.input label span {
+  color: red;
+  font-size: 0.7rem;
+}
+.input input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #bce0fd;
+  border-radius: 0.5rem;
+  background-color: #f1f9ff;
+}
+.input textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #bce0fd;
+  border-radius: 0.5rem;
+  background-color: #f1f9ff;
+  min-height: 8rem;
+}
+/* responsive for labtop screens */
+@media (max-width: 1550px) {
+  .input {
+    margin-bottom: 1rem;
+  }
+  .input label {
+    margin-bottom: 0.3rem;
+  }
+
+  .input input {
+    padding: 0.4rem;
+    border: 1px solid #bce0fd;
+    border-radius: 0.3rem;
+  }
+  .input textarea {
+    padding: 0.4rem;
+    border: 1px solid #bce0fd;
+    border-radius: 0.3rem;
+    min-height: 6rem;
+  }
+}
+
+/* ******************************************************* */
+/* alwan-table */
+.alwan-table {
+  width: 75%;
+  border: 2px solid #e7e7e7;
+  margin: 1rem auto;
+  border-radius: 0.7rem;
+}
+.alwan-table .head-1 {
+  background-color: #fafafa;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+.alwan-table .head-1 > p {
+  font-size: 1.1rem;
+}
+.alwan-table .head-1 div button {
+  background-color: transparent;
+  border: none;
+}
+.alwan-table .head-1 div button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.alwan-table .head-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+.alwan-table .head-2 .sort button {
+  background-color: transparent;
+  border: none;
+}
+.alwan-table .head-2 .sort button span {
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+}
+.alwan-table .head-2 .sort button svg {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+.alwan-table .head-2 .search {
+  width: 45%;
+}
+.alwan-table .head-2 .search > div {
+  position: relative;
+  background-color: #f1f5fe;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 3rem;
+}
+.alwan-table .head-2 .search > div input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  outline: none;
+}
+.alwan-table .head-2 .search > div input::placeholder {
+  color: #adb8cc;
+}
+.alwan-table .head-2 .search > div svg {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+}
+.alwan-table .head-2 .order {
+  display: flex;
+  align-items: center;
+}
+.alwan-table .head-2 .order button {
+  background-color: transparent;
+  border: none;
+  margin-right: 1rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.4rem;
+}
+.alwan-table .head-2 .order button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.alwan-table .head-2 .order button.active {
+  background-color: #bdccff;
+}
+.alwan-table .head-2 .order button.active svg {
+  width: 1rem;
+  height: 1rem;
+}
+.alwan-table .head-2 .order button.active svg path {
+  fill: rgba(51, 97, 255, 0.8) !important;
+}
+.alwan-table table {
+  width: calc(100% - 4rem);
+  margin: 0rem 2rem;
+  border-spacing: 1rem;
+  border-collapse: separate;
+}
+.alwan-table table th {
+  font-size: 1.1rem;
+  padding: 0.6rem;
+}
+.alwan-table table tr {
+  box-shadow: 0px 2px 0px #eff1f5, 0px -2px 0px #eff1f5;
+}
+.alwan-table table td {
+  font-size: 1.05rem;
+  padding: 0.5rem;
+}
+.alwan-table .thead {
+  box-shadow: none !important;
+}
+.alwan-table .note {
+  color: #0094f6;
+}
+.alwan-table .more .dropdown-toggle::after {
+  display: none;
+}
+.alwan-table .more .dropdown-menu {
+  border: none;
+  padding: 0 !important;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #e7e7e7, -1px -1px 2px #e7e7e7;
+}
+.alwan-table .more .dropdown-menu li {
+  border-bottom: 1px solid #eeeeee;
+  padding: 0.3rem;
+}
+.alwan-table .more .dropdown-menu li .delete {
+  color: #ff0000;
+}
+.alwan-table .pagination {
+  margin: 0rem auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alwan-table .pagination > div.steps {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.alwan-table .pagination > div.steps button {
+  background-color: transparent;
+  border: none;
+}
+.alwan-table .pagination > div.steps button svg {
+  transform: scale(1.1);
+}
+.alwan-table .pagination > div.steps button:last-of-type {
+  transform: rotate(180deg);
+}
+.alwan-table .pagination > div.steps span {
+  margin: 0 0.6rem;
+  background-color: #f1eded;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alwan-table .pagination > div.dropdown .dropdown-toggle {
+  border: 1px solid #0094f680;
+  color: #0094f6;
+  display: flex;
+  border-radius: 0;
+}
+.alwan-table .pagination > div.dropdown .dropdown-toggle::after {
+  display: none;
+}
+.alwan-table .pagination > div.dropdown .dropdown-toggle .icons {
+  width: 1rem;
+  height: 1.1rem;
+  display: block;
+  position: relative;
+  margin-left: -0.3rem;
+  margin-top: 0.15rem;
+  margin-right: 1rem;
+}
+.alwan-table .pagination > div.dropdown .dropdown-toggle .icons svg:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+.alwan-table .pagination > div.dropdown .dropdown-toggle .icons svg:last-of-type {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+}
+.alwan-table .pagination > div.dropdown .dropdown-menu {
+  min-width: 100%;
+  text-align: center;
+  max-height: 13rem;
+  overflow: auto;
+}
+/* responsive for labtop screens */
+@media (max-width: 1550px) {
+  /* alwan-table */
+  .alwan-table {
+    width: 80%;
+    border: 1px solid #e7e7e7;
+    margin: 0.5rem auto;
+    border-radius: 0.6rem;
+  }
+  .alwan-table .head-1 {
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    padding: 0.8rem 1.5rem;
+  }
+  .alwan-table .head-1 > p {
+    font-size: 0.9rem;
+  }
+
+  .alwan-table .head-1 div button svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.6rem;
+  }
+  .alwan-table .head-2 {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .alwan-table .head-2 .sort button span {
+    font-size: 0.95rem;
+  }
+  .alwan-table .head-2 .sort button svg {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+  }
+
+  .alwan-table .head-2 .search > div {
+    padding: 0.6rem;
+  }
+  .alwan-table .head-2 .search > div input {
+    font-size: 0.9rem;
+  }
+  .alwan-table .head-2 .search > div input::placeholder {
+    color: #adb8cc;
+  }
+  .alwan-table .head-2 .search > div svg {
+    left: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  .alwan-table .head-2 .order button {
+    margin-right: 0.7rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.3rem;
+  }
+  .alwan-table .head-2 .order button svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .alwan-table table {
+    width: calc(100% - 1rem);
+    margin: 0rem 1rem;
+    border-spacing: 0.6rem;
+  }
+  .alwan-table table th {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+  .alwan-table table tr {
+    box-shadow: 0px 1px 0px #eff1f5, 0px -1px 0px #eff1f5;
+  }
+  .alwan-table table td {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+  .alwan-table .more .dropdown-toggle svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  .alwan-table .more .dropdown-menu li {
+    padding: 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .alwan-table .pagination > div.steps button svg {
+    transform: scale(0.9);
+  }
+
+  .alwan-table .pagination > div.steps span {
+    margin: 0 0.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .alwan-table .pagination > div.dropdown .dropdown-toggle {
+    font-size: 0.9rem;
+  }
+
+  .alwan-table .pagination > div.dropdown .dropdown-menu {
+    font-size: 0.8rem;
+  }
+}
+/* ******************************************************* */
