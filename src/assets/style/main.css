@@ -86,6 +86,10 @@ a {
 .modal-content {
   border-radius: 0.7rem;
 }
+.big-modal {
+  min-width: 40%;
+  width: 40%;
+}
 .modal-header {
   background-color: #fafbfc;
   border: none;
@@ -111,6 +115,10 @@ a {
 @media (max-width: 1550px) {
   .modal-content {
     border-radius: 0.5rem;
+  }
+  .big-modal {
+    min-width: 50%;
+    width: 50%;
   }
   .modal-header {
     border-top-left-radius: 0.5rem;
@@ -157,6 +165,56 @@ a {
   background-color: #f1f9ff;
   min-height: 8rem;
 }
+.input .dropdown-toggle {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #bce0fd;
+  border-radius: 0.5rem;
+  background-color: #f1f9ff;
+  text-align: right;
+  position: relative;
+}
+.input .dropdown-toggle::after {
+  display: none;
+}
+.input .dropdown-toggle .icons {
+  width: 1rem;
+  height: 1.1rem;
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  margin-left: -0.3rem;
+  margin-top: 0.15rem;
+  margin-right: 1rem;
+}
+.input .dropdown-toggle .icons svg:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+.input .dropdown-toggle .icons svg:last-of-type {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+}
+
+.input .dropdown-menu {
+  border: none;
+  padding: 0 !important;
+  width: 100%;
+  text-align: right;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #e7e7e7, -1px -1px 2px #e7e7e7;
+  max-height: 10rem;
+  overflow: auto;
+}
+.input .dropdown-menu li {
+  border-bottom: 1px solid #eeeeee;
+  padding: 0.3rem;
+}
 /* responsive for labtop screens */
 @media (max-width: 1550px) {
   .input {
@@ -164,6 +222,7 @@ a {
   }
   .input label {
     margin-bottom: 0.3rem;
+    font-size: 0.9rem;
   }
 
   .input input {
@@ -177,6 +236,19 @@ a {
     border-radius: 0.3rem;
     min-height: 6rem;
   }
+  .input .dropdown-toggle {
+    padding: 0.4rem;
+    border: 1px solid #bce0fd;
+    border-radius: 0.3rem;
+  }
+
+  .input .dropdown-menu {
+    max-height: 7rem;
+  }
+  .input .dropdown-menu li {
+    padding: 0.1rem;
+    font-size: 0.9rem;
+  }
 }
 
 /* ******************************************************* */
@@ -186,6 +258,9 @@ a {
   border: 2px solid #e7e7e7;
   margin: 1rem auto;
   border-radius: 0.7rem;
+}
+.big-table {
+  width: 90%;
 }
 .alwan-table .head-1 {
   background-color: #fafafa;
@@ -394,6 +469,9 @@ a {
     border: 1px solid #e7e7e7;
     margin: 0.5rem auto;
     border-radius: 0.6rem;
+  }
+  .big-table {
+    width: 95%;
   }
   .alwan-table .head-1 {
     border-top-left-radius: 0.6rem;
