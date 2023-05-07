@@ -2,6 +2,7 @@
   <div>
     <DashboardHeader title="الملاك" />
     <PageLinks
+      :RouteCount="2"
       :link1="{ route: '/', title: 'لوحه التحكم' }"
       :link2="{ route: '/angel', title: 'الملاك' }"
     />

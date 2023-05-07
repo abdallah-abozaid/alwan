@@ -29,7 +29,8 @@ button,
 a {
   cursor: pointer;
 }
-button {
+button,
+input {
   outline: none;
 }
 a {
@@ -37,6 +38,40 @@ a {
   color: var(--color-text);
 }
 
+/* ******************************************************* */
+/* style for input number */
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.number-input svg {
+  width: 0.6rem;
+  height: 0.6rem;
+  z-index: 10;
+  position: absolute;
+  left: 1rem;
+  cursor: pointer;
+}
+.number-input svg:first-of-type {
+  top: 0.5rem;
+  transform: rotate(90deg);
+}
+.number-input svg:last-of-type {
+  bottom: 0.5rem;
+  transform: rotate(-90deg);
+}
 /* ******************************************************* */
 /* width */
 ::-webkit-scrollbar {
@@ -64,21 +99,21 @@ a {
 .btn-primary {
   background-color: #3361ff;
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
 }
 .btn-secondary {
   background-color: #e2e3e5;
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   color: #707070;
 }
 /* responsive for labtop screens */
 @media (max-width: 1550px) {
   .btn-primary {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   .btn-secondary {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 /* ******************************************************* */
@@ -111,6 +146,29 @@ a {
 .modal-body {
   margin-bottom: 2rem;
 }
+.two-modal {
+  min-width: 70%;
+  width: 70%;
+}
+.two-modal .modal-content {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  justify-content: space-between;
+}
+.two-modal .modal-content .modal-body {
+  margin-bottom: 0;
+}
+.two-modal .modal-content > div {
+  background-color: #fff;
+  border-radius: 0.7rem;
+}
+.two-modal .modal-content .first-modal {
+  width: 36%;
+}
+.two-modal .modal-content .sec-modal {
+  width: 62%;
+}
 /* responsive for labtop screens */
 @media (max-width: 1550px) {
   .modal-content {
@@ -133,6 +191,16 @@ a {
   }
   .modal-body {
     margin-bottom: 1rem;
+  }
+  .two-modal {
+    min-width: 70%;
+    width: 70%;
+  }
+  .two-modal .modal-content .first-modal {
+    width: 37%;
+  }
+  .two-modal .modal-content .sec-modal {
+    width: 61%;
   }
 }
 
@@ -177,29 +245,6 @@ a {
 .input .dropdown-toggle::after {
   display: none;
 }
-.input .dropdown-toggle .icons {
-  width: 1rem;
-  height: 1.1rem;
-  display: block;
-  position: absolute;
-  top: 0.5rem;
-  left: 1rem;
-  margin-left: -0.3rem;
-  margin-top: 0.15rem;
-  margin-right: 1rem;
-}
-.input .dropdown-toggle .icons svg:first-of-type {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) rotate(90deg);
-}
-.input .dropdown-toggle .icons svg:last-of-type {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) rotate(-90deg);
-}
 
 .input .dropdown-menu {
   border: none;
@@ -214,6 +259,17 @@ a {
 .input .dropdown-menu li {
   border-bottom: 1px solid #eeeeee;
   padding: 0.3rem;
+}
+.input .date-input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.input .date-input svg {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
 }
 /* responsive for labtop screens */
 @media (max-width: 1550px) {
@@ -261,6 +317,9 @@ a {
 }
 .big-table {
   width: 90%;
+}
+.full-table {
+  width: 100%;
 }
 .alwan-table .head-1 {
   background-color: #fafafa;
@@ -376,6 +435,18 @@ a {
 .alwan-table .note {
   color: #0094f6;
 }
+.alwan-table .link a {
+  background-color: #0094f6;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+}
+.alwan-table .link a svg {
+  transform: rotate(-90deg);
+  margin-right: 0.3rem;
+  width: 0.6rem;
+  height: 0.6rem;
+}
 .alwan-table .more .dropdown-toggle::after {
   display: none;
 }
@@ -473,6 +544,10 @@ a {
   .big-table {
     width: 95%;
   }
+  .full-table {
+    width: 100%;
+    margin: 1rem 0;
+  }
   .alwan-table .head-1 {
     border-top-left-radius: 0.6rem;
     border-top-right-radius: 0.6rem;
@@ -530,15 +605,24 @@ a {
     border-spacing: 0.6rem;
   }
   .alwan-table table th {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding: 0.5rem;
   }
   .alwan-table table tr {
     box-shadow: 0px 1px 0px #eff1f5, 0px -1px 0px #eff1f5;
   }
   .alwan-table table td {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 0.4rem;
+  }
+  .alwan-table .link a {
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.6rem;
+    font-size: 0.85rem;
+  }
+  .alwan-table .link a svg {
+    width: 0.5rem;
+    height: 0.5rem;
   }
   .alwan-table .more .dropdown-toggle svg {
     width: 1rem;
@@ -564,6 +648,39 @@ a {
 
   .alwan-table .pagination > div.dropdown .dropdown-menu {
     font-size: 0.8rem;
+  }
+}
+/* ******************************************************* */
+/* custom-modal */
+.custom-modal {
+  width: 70%;
+  margin: 2rem auto;
+  border: 2px solid #f3f3f3;
+  border-radius: 1rem;
+}
+.custom-modal .modal-header {
+  padding: 1rem;
+}
+.custom-modal .modal-body {
+  padding: 1rem;
+  margin: 0;
+}
+/* responsive for labtop screens */
+@media (max-width: 1550px) {
+  .custom-modal {
+    width: 90%;
+    margin: 1rem auto;
+    border: 1px solid #f3f3f3;
+    border-radius: 0.7rem;
+  }
+  .custom-modal .modal-header {
+    padding: 0.8rem;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+  }
+  .custom-modal .modal-body {
+    padding: 0.8rem;
+    margin: 0;
   }
 }
 /* ******************************************************* */

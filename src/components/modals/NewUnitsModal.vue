@@ -26,54 +26,30 @@
               </div>
               <div class="input">
                 <label>عدد الوحدات التجارية <span>(*)</span></label>
-                <div class="dropdown">
-                  <button
-                    class="btn dropdown-toggle"
-                    type="button"
-                    id="dropdownlist1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    8
-                    <div class="icons">
-                      <IconArrow color="#0094f6" />
-                      <IconArrow color="#0094f6" />
-                    </div>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownlist1">
-                    <li><a class="dropdown-item" href="#">1</a></li>
-                    <li><a class="dropdown-item" href="#">2</a></li>
-                    <li><a class="dropdown-item" href="#">3</a></li>
-                    <li><a class="dropdown-item" href="#">4</a></li>
-                    <li><a class="dropdown-item" href="#">5</a></li>
-                    <li><a class="dropdown-item" href="#">6</a></li>
-                  </ul>
+                <div class="number-input">
+                  <IconArrow
+                    color="#0094f6"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  />
+                  <IconArrow
+                    color="#0094f6"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                  />
+                  <input type="number" />
                 </div>
               </div>
               <div class="input">
                 <label>عدد الوحدات السكنية <span>(*)</span></label>
-                <div class="dropdown">
-                  <button
-                    class="btn dropdown-toggle"
-                    type="button"
-                    id="dropdownlist2"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    8
-                    <div class="icons">
-                      <IconArrow color="#0094f6" />
-                      <IconArrow color="#0094f6" />
-                    </div>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownlist2">
-                    <li><a class="dropdown-item" href="#">1</a></li>
-                    <li><a class="dropdown-item" href="#">2</a></li>
-                    <li><a class="dropdown-item" href="#">3</a></li>
-                    <li><a class="dropdown-item" href="#">4</a></li>
-                    <li><a class="dropdown-item" href="#">5</a></li>
-                    <li><a class="dropdown-item" href="#">6</a></li>
-                  </ul>
+                <div class="number-input">
+                  <IconArrow
+                    color="#0094f6"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  />
+                  <IconArrow
+                    color="#0094f6"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                  />
+                  <input type="number" />
                 </div>
               </div>
               <div class="input">

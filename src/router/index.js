@@ -50,6 +50,31 @@ const router = createRouter({
       component: () => import('../views/ContractsPage.vue')
     },
     {
+      path: '/contracts/:id',
+      name: 'update contract',
+      meta: {
+        layout: 'dashboard-layout',
+        title: 'Update Contract page'
+      },
+      component: () => import('../views/UpdateContractPage.vue'),
+      children: [
+        { path: '', component: () => import('../views/contracts/PaymentsPage.vue') },
+        { path: 'expenses', component: () => import('../views/contracts/ExpensesPage.vue') },
+        {
+          path: 'administration-wages',
+          component: () => import('../views/contracts/AdministrationWagesPage.vue')
+        },
+        {
+          path: 'owners-entitlements',
+          component: () => import('../views/contracts/OwnersEntitlementsPage.vue')
+        },
+        {
+          path: 'statment-of-account',
+          component: () => import('../views/contracts/StatmentOfAccountPage.vue')
+        }
+      ]
+    },
+    {
       path: '/reports',
       name: 'reports',
       meta: {

@@ -9,6 +9,7 @@
     <NewTanantModal />
     <NewAngelModal />
     <NewUnitsModal />
+    <NewContractsModal />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import { RouterView, useRoute } from 'vue-router'
 import NewTanantModal from '@/components/modals/NewTanantModal.vue'
 import NewAngelModal from '@/components/modals/NewAngelModal.vue'
 import NewUnitsModal from '@/components/modals/NewUnitsModal.vue'
+import NewContractsModal from '@/components/modals/NewContractsModal.vue'
 const route = useRoute()
 
 // to give each page 'layout'
