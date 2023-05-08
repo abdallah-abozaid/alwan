@@ -179,11 +179,11 @@
 </template>
 <script setup>
 import DashboardHeader from '@/components/dashboard/DashboardHeader.vue'
-import IconUsers from '../components/icons/IconUsers.vue'
-import IconPlus from '../components/icons/IconPlus.vue'
-import IconOwner from '../components/icons/IconOwner.vue'
-import IconUnits from '../components/icons/IconUnits.vue'
-import IconContracts from '../components/icons/IconContracts.vue'
+import IconUsers from '@/components/icons/IconUsers.vue'
+import IconPlus from '@/components/icons/IconPlus.vue'
+import IconOwner from '@/components/icons/IconOwner.vue'
+import IconUnits from '@/components/icons/IconUnits.vue'
+import IconContracts from '@/components/icons/IconContracts.vue'
 </script>
 <style scoped>
 /* boxes */

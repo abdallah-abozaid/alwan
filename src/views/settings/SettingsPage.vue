@@ -3,7 +3,7 @@
     <DashboardHeader title="الإعدادت" />
     <PageLinks
       :RouteCount="2"
-      :link1="{ route: '/', title: 'لوحه التحكم' }"
+      :link1="{ route: '/dashboard', title: 'لوحه التحكم' }"
       :link2="{ route: '/settings', title: 'الإعدادت' }"
     />
 

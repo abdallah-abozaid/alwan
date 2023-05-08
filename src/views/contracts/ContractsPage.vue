@@ -1,22 +1,22 @@
 <template>
   <div>
-    <DashboardHeader title="الملاك" />
+    <DashboardHeader title="العقود" />
     <PageLinks
       :RouteCount="2"
-      :link1="{ route: '/', title: 'لوحه التحكم' }"
-      :link2="{ route: '/angel', title: 'الملاك' }"
+      :link1="{ route: '/dashboard', title: 'لوحه التحكم' }"
+      :link2="{ route: '/contracts', title: 'العقود' }"
     />
 
     <!-- alwan table -->
-    <div class="alwan-table">
+    <div class="alwan-table big-table">
       <!-- header 1 -->
       <div class="head-1">
-        <p class="m-0">الملاك</p>
+        <p class="m-0">العقود</p>
         <div>
           <button>
             <IconExport color="#c4c4c4" />
           </button>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#angelModal">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#contractsModal">
             <IconPlus color="#3361FF" />
           </button>
         </div>
@@ -54,18 +54,37 @@
       <table>
         <tr class="thead">
           <th></th>
-          <th>الإسم كاملاً</th>
-          <th>رقم الجوال</th>
-          <th>ملاحظات</th>
+          <th>إسم العقار</th>
+          <th>رقم الوحدة</th>
+          <th>رقم العقد</th>
+          <th>تاريخ بداية العقد</th>
+          <th>تاريخ نهاية العقد</th>
+          <th>حالة العقد</th>
+          <th>إستمراية العقد</th>
           <th>المزيد</th>
         </tr>
+        <!-- row -->
         <tr>
           <td>
             <input type="checkbox" class="form-check-input" />
           </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>0096655857425</td>
-          <td class="note">111111</td>
+          <td>عمارة البر</td>
+          <td>8</td>
+          <td>8</td>
+          <td class="note">2-5-2022</td>
+          <td class="note">10-8-2022</td>
+          <td class="link">
+            <RouterLink to="/contracts/1"
+              >تحديث
+              <IconArrow color="#fff" />
+            </RouterLink>
+          </td>
+          <td class="link">
+            <a href="/"
+              >منتهي
+              <IconArrow color="#fff" />
+            </a>
+          </td>
           <td>
             <div class="dropdown more">
               <button
@@ -84,13 +103,28 @@
             </div>
           </td>
         </tr>
+        <!-- row -->
         <tr>
           <td>
             <input type="checkbox" class="form-check-input" />
           </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>0096655857425</td>
-          <td class="note">111111</td>
+          <td>عمارة البر</td>
+          <td>8</td>
+          <td>8</td>
+          <td class="note">2-5-2022</td>
+          <td class="note">10-8-2022</td>
+          <td class="link">
+            <RouterLink to="/contracts/1"
+              >تحديث
+              <IconArrow color="#fff" />
+            </RouterLink>
+          </td>
+          <td class="link">
+            <a href="/"
+              >منتهي
+              <IconArrow color="#fff" />
+            </a>
+          </td>
           <td>
             <div class="dropdown more">
               <button
@@ -109,13 +143,28 @@
             </div>
           </td>
         </tr>
+        <!-- row -->
         <tr>
           <td>
             <input type="checkbox" class="form-check-input" />
           </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>0096655857425</td>
-          <td class="note">111111</td>
+          <td>عمارة البر</td>
+          <td>8</td>
+          <td>8</td>
+          <td class="note">2-5-2022</td>
+          <td class="note">10-8-2022</td>
+          <td class="link">
+            <RouterLink to="/contracts/1"
+              >تحديث
+              <IconArrow color="#fff" />
+            </RouterLink>
+          </td>
+          <td class="link">
+            <a href="/"
+              >منتهي
+              <IconArrow color="#fff" />
+            </a>
+          </td>
           <td>
             <div class="dropdown more">
               <button
@@ -134,13 +183,28 @@
             </div>
           </td>
         </tr>
+        <!-- row -->
         <tr>
           <td>
             <input type="checkbox" class="form-check-input" />
           </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>0096655857425</td>
-          <td class="note">111111</td>
+          <td>عمارة البر</td>
+          <td>8</td>
+          <td>8</td>
+          <td class="note">2-5-2022</td>
+          <td class="note">10-8-2022</td>
+          <td class="link">
+            <RouterLink to="/contracts/1"
+              >تحديث
+              <IconArrow color="#fff" />
+            </RouterLink>
+          </td>
+          <td class="link">
+            <a href="/"
+              >منتهي
+              <IconArrow color="#fff" />
+            </a>
+          </td>
           <td>
             <div class="dropdown more">
               <button
@@ -159,13 +223,28 @@
             </div>
           </td>
         </tr>
+        <!-- row -->
         <tr>
           <td>
             <input type="checkbox" class="form-check-input" />
           </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>0096655857425</td>
-          <td class="note">111111</td>
+          <td>عمارة البر</td>
+          <td>8</td>
+          <td>8</td>
+          <td class="note">2-5-2022</td>
+          <td class="note">10-8-2022</td>
+          <td class="link">
+            <RouterLink to="/contracts/1"
+              >تحديث
+              <IconArrow color="#fff" />
+            </RouterLink>
+          </td>
+          <td class="link">
+            <a href="/"
+              >منتهي
+              <IconArrow color="#fff" />
+            </a>
+          </td>
           <td>
             <div class="dropdown more">
               <button
@@ -184,13 +263,28 @@
             </div>
           </td>
         </tr>
+        <!-- row -->
         <tr>
           <td>
             <input type="checkbox" class="form-check-input" />
           </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>0096655857425</td>
-          <td class="note">111111</td>
+          <td>عمارة البر</td>
+          <td>8</td>
+          <td>8</td>
+          <td class="note">2-5-2022</td>
+          <td class="note">10-8-2022</td>
+          <td class="link">
+            <a href="/"
+              >تحديث
+              <IconArrow color="#fff" />
+            </a>
+          </td>
+          <td class="link">
+            <a href="/"
+              >منتهي
+              <IconArrow color="#fff" />
+            </a>
+          </td>
           <td>
             <div class="dropdown more">
               <button
@@ -250,18 +344,19 @@
   </div>
 </template>
 <script setup>
+import { RouterLink } from 'vue-router'
 import DashboardHeader from '@/components/dashboard/DashboardHeader.vue'
-import PageLinks from '../components/forms/PageLinks.vue'
-import IconPlus from '../components/icons/IconPlus.vue'
-import IconExport from '../components/icons/IconExport.vue'
-import IconSearch from '../components/icons/IconSearch.vue'
-import IconList from '../components/icons/IconList.vue'
-import IconAZ from '../components/icons/IconAZ.vue'
-import IconOrder1 from '../components/icons/IconOrder1.vue'
-import IconOrder2 from '../components/icons/IconOrder2.vue'
-import IconOrder3 from '../components/icons/IconOrder3.vue'
-import IconThreeDotes from '../components/icons/IconThreeDotes.vue'
-import IconDoubleStep from '../components/icons/IconDoubleStep.vue'
-import IconArrow from '../components/icons/IconArrow.vue'
+import PageLinks from '@/components/forms/PageLinks.vue'
+import IconPlus from '@/components/icons/IconPlus.vue'
+import IconExport from '@/components/icons/IconExport.vue'
+import IconSearch from '@/components/icons/IconSearch.vue'
+import IconList from '@/components/icons/IconList.vue'
+import IconAZ from '@/components/icons/IconAZ.vue'
+import IconOrder1 from '@/components/icons/IconOrder1.vue'
+import IconOrder2 from '@/components/icons/IconOrder2.vue'
+import IconOrder3 from '@/components/icons/IconOrder3.vue'
+import IconThreeDotes from '@/components/icons/IconThreeDotes.vue'
+import IconDoubleStep from '@/components/icons/IconDoubleStep.vue'
+import IconArrow from '@/components/icons/IconArrow.vue'
 </script>
 <style scoped></style>

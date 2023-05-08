@@ -3,19 +3,19 @@
     <DashboardHeader title="التقارير " />
     <PageLinks
       :RouteCount="2"
-      :link1="{ route: '/', title: 'لوحه التحكم' }"
+      :link1="{ route: '/dashboard', title: 'لوحه التحكم' }"
       :link2="{ route: '/reports', title: 'التقارير' }"
     />
     <div class="children-page">
       <div class="links">
         <ul>
           <li>
-            <router-link to="/reports"> <IconUsers color="#747474" />  المستأجرين </router-link>
+            <router-link to="/reports"> <IconUsers color="#747474" /> المستأجرين </router-link>
           </li>
           <li>
             <router-link to="/reports/angel">
               <IconOwner color="#747474" />
-               الملاك
+              الملاك
             </router-link>
           </li>
           <li>
@@ -41,11 +41,11 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import DashboardHeader from '@/components/dashboard/DashboardHeader.vue'
-import PageLinks from '../components/forms/PageLinks.vue'
-import IconUsers from '../components/icons/IconUsers.vue'
-import IconOwner from '../components/icons/IconOwner.vue'
-import IconUnits from '../components/icons/IconUnits.vue'
-import IconContracts from '../components/icons/IconContracts.vue'
+import PageLinks from '@/components/forms/PageLinks.vue'
+import IconUsers from '@/components/icons/IconUsers.vue'
+import IconOwner from '@/components/icons/IconOwner.vue'
+import IconUnits from '@/components/icons/IconUnits.vue'
+import IconContracts from '@/components/icons/IconContracts.vue'
 </script>
 <style scoped>
 .children-page {

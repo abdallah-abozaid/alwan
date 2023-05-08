@@ -5,7 +5,7 @@
         <img src="@/assets/imgs/logo.svg" alt="logo" />
       </div>
       <div class="list">
-        <RouterLink to="/">
+        <RouterLink to="/dashboard">
           <span> <IconCombinedShap color="#646464" /> لوحة التحكم</span>
         </RouterLink>
         <RouterLink to="/tenants">

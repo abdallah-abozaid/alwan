@@ -3,7 +3,7 @@
     <DashboardHeader title="تحديث العقود " />
     <PageLinks
       :RouteCount="3"
-      :link1="{ route: '/', title: 'لوحه التحكم' }"
+      :link1="{ route: '/dashboard', title: 'لوحه التحكم' }"
       :link2="{ route: '/contracts', title: 'العقود' }"
       :link3="{ route: '/contracts/1', title: 'تحديث العقد' }"
     />
@@ -48,12 +48,12 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import DashboardHeader from '@/components/dashboard/DashboardHeader.vue'
-import PageLinks from '../components/forms/PageLinks.vue'
-import IconsPayments from '../components/icons/IconsPayments.vue'
-import IconExpenses from '../components/icons/IconExpenses.vue'
-import IconWages from '../components/icons/IconWages.vue'
-import IconDues from '../components/icons/IconDues.vue'
-import IconAccountStatment from '../components/icons/IconAccountStatment.vue'
+import PageLinks from '@/components/forms/PageLinks.vue'
+import IconsPayments from '@/components/icons/IconsPayments.vue'
+import IconExpenses from '@/components/icons/IconExpenses.vue'
+import IconWages from '@/components/icons/IconWages.vue'
+import IconDues from '@/components/icons/IconDues.vue'
+import IconAccountStatment from '@/components/icons/IconAccountStatment.vue'
 </script>
 <style scoped>
 .children-page {

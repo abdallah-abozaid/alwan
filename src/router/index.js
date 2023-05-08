@@ -1,17 +1,49 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import DashboardPage from '../views/DashboardPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
+      redirect: () => {
+        return { name: 'login' }
+      }
+    },
+    {
+      path: '/login',
+      name: 'login',
+      meta: {
+        layout: 'auth-layout',
+        title: 'Login Page'
+      },
+      component: () => import('../views/auth/LoginPage.vue')
+    },
+    {
+      path: '/forget-password',
+      name: 'forget-password',
+      meta: {
+        layout: 'auth-layout',
+        title: 'Forget Password Page '
+      },
+      component: () => import('../views/auth/ForgetPasswordPage.vue')
+    },
+    {
+      path: '/return-password',
+      name: 'return-password',
+      meta: {
+        layout: 'auth-layout',
+        title: 'Return Password Page'
+      },
+      component: () => import('../views/auth/ReturnPasswordPage.vue')
+    },
+    {
+      path: '/dashboard',
       name: 'dashboard',
       meta: {
         layout: 'dashboard-layout',
         title: 'Dashboard Page'
       },
-      component: DashboardPage
+      component: () => import('../views/dashboard/DashboardPage.vue')
     },
     {
       path: '/tenants',
@@ -20,7 +52,7 @@ const router = createRouter({
         layout: 'dashboard-layout',
         title: 'Tenants page'
       },
-      component: () => import('../views/TenantsPage.vue')
+      component: () => import('../views/tenants/TenantsPage.vue')
     },
     {
       path: '/angel',
@@ -29,7 +61,7 @@ const router = createRouter({
         layout: 'dashboard-layout',
         title: 'Angel page'
       },
-      component: () => import('../views/AngelPage.vue')
+      component: () => import('../views/angel/AngelPage.vue')
     },
     {
       path: '/units',
@@ -38,7 +70,7 @@ const router = createRouter({
         layout: 'dashboard-layout',
         title: 'Units page'
       },
-      component: () => import('../views/UnitsPage.vue')
+      component: () => import('../views/units/UnitsPage.vue')
     },
     {
       path: '/contracts',
@@ -47,7 +79,7 @@ const router = createRouter({
         layout: 'dashboard-layout',
         title: 'Contracts page'
       },
-      component: () => import('../views/ContractsPage.vue')
+      component: () => import('../views/contracts/ContractsPage.vue')
     },
     {
       path: '/contracts/:id',
@@ -56,7 +88,7 @@ const router = createRouter({
         layout: 'dashboard-layout',
         title: 'Update Contract page'
       },
-      component: () => import('../views/UpdateContractPage.vue'),
+      component: () => import('../views/contracts/UpdateContractPage.vue'),
       children: [
         { path: '', component: () => import('../views/contracts/PaymentsPage.vue') },
         { path: 'expenses', component: () => import('../views/contracts/ExpensesPage.vue') },
@@ -81,8 +113,8 @@ const router = createRouter({
         layout: 'dashboard-layout',
         title: 'Reports page'
       },
-      component: () => import('../views/ReportsPage.vue'),
-       children: [
+      component: () => import('../views/reports/ReportsPage.vue'),
+      children: [
         { path: '', component: () => import('../views/reports/TenantsReports.vue') },
         { path: 'angel', component: () => import('../views/reports/AngelReports.vue') },
         {
@@ -93,7 +125,6 @@ const router = createRouter({
           path: 'contracts',
           component: () => import('../views/reports/ContractsReports.vue')
         }
-       
       ]
     },
     {
@@ -103,7 +134,7 @@ const router = createRouter({
         layout: 'dashboard-layout',
         title: 'Settings page'
       },
-      component: () => import('../views/SettingsPage.vue')
+      component: () => import('../views/settings/SettingsPage.vue')
     }
   ]
 })

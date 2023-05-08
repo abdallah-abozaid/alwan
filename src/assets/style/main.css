@@ -712,3 +712,106 @@ input[type='number']::-webkit-outer-spin-button {
   }
 }
 /* ******************************************************* */
+/* style auth-form */
+.auth-form {
+  min-width: 30%;
+  padding: 2rem;
+  box-shadow: 2px 2px 5px #ebebeb, -2px -2px 5px #ebebeb;
+  border-radius: 1rem;
+}
+.auth-form .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+.auth-form .logo {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.auth-form .logo img {
+  width: 7rem;
+}
+.auth-form .input label > span {
+  font-size: 1.5rem;
+}
+.auth-form .submit,
+.auth-form .retry {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+.auth-form .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.auth-form .links > div label {
+  font-size: 1.2rem;
+  color: #000;
+  cursor: pointer;
+}
+.auth-form .links > div input {
+  margin-left: 0.5rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.auth-form .links a,
+.auth-form .red {
+  color: red;
+  font-size: 1.1rem;
+}
+.auth-form .links .time {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* responsive for labtop screens */
+@media (max-width: 1550px) {
+  .auth-form {
+    min-width: 35%;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+  }
+  .auth-form .title {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .auth-form .logo {
+    margin-bottom: 1rem;
+  }
+  .auth-form .logo img {
+    width: 5.5rem;
+  }
+  .auth-form .input label > span {
+    font-size: 1.2rem;
+  }
+  .auth-form .submit,
+  .auth-form .retry {
+    padding: 0.7rem;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .auth-form .links > div label {
+    font-size: 1rem;
+  }
+  .auth-form .links > div input {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .auth-form .links a,
+  .auth-form .red {
+    font-size: 1rem;
+  }
+  .auth-form .links .time {
+    font-size: 1rem;
+  }
+}
+/* ******************************************************* */

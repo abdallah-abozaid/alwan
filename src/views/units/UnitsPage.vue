@@ -3,7 +3,7 @@
     <DashboardHeader title="العقارات والوحدات" />
     <PageLinks
       :RouteCount="2"
-      :link1="{ route: '/', title: 'لوحه التحكم' }"
+      :link1="{ route: '/dashboard', title: 'لوحه التحكم' }"
       :link2="{ route: '/units', title: 'العقارات والوحدات' }"
     />
 
@@ -272,17 +272,17 @@
 </template>
 <script setup>
 import DashboardHeader from '@/components/dashboard/DashboardHeader.vue'
-import PageLinks from '../components/forms/PageLinks.vue'
-import IconPlus from '../components/icons/IconPlus.vue'
-import IconExport from '../components/icons/IconExport.vue'
-import IconSearch from '../components/icons/IconSearch.vue'
-import IconList from '../components/icons/IconList.vue'
-import IconAZ from '../components/icons/IconAZ.vue'
-import IconOrder1 from '../components/icons/IconOrder1.vue'
-import IconOrder2 from '../components/icons/IconOrder2.vue'
-import IconOrder3 from '../components/icons/IconOrder3.vue'
-import IconThreeDotes from '../components/icons/IconThreeDotes.vue'
-import IconDoubleStep from '../components/icons/IconDoubleStep.vue'
-import IconArrow from '../components/icons/IconArrow.vue'
+import PageLinks from '@/components/forms/PageLinks.vue'
+import IconPlus from '@/components/icons/IconPlus.vue'
+import IconExport from '@/components/icons/IconExport.vue'
+import IconSearch from '@/components/icons/IconSearch.vue'
+import IconList from '@/components/icons/IconList.vue'
+import IconAZ from '@/components/icons/IconAZ.vue'
+import IconOrder1 from '@/components/icons/IconOrder1.vue'
+import IconOrder2 from '@/components/icons/IconOrder2.vue'
+import IconOrder3 from '@/components/icons/IconOrder3.vue'
+import IconThreeDotes from '@/components/icons/IconThreeDotes.vue'
+import IconDoubleStep from '@/components/icons/IconDoubleStep.vue'
+import IconArrow from '@/components/icons/IconArrow.vue'
 </script>
 <style scoped></style>
