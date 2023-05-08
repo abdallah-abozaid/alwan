@@ -81,7 +81,20 @@ const router = createRouter({
         layout: 'dashboard-layout',
         title: 'Reports page'
       },
-      component: () => import('../views/ReportsPage.vue')
+      component: () => import('../views/ReportsPage.vue'),
+       children: [
+        { path: '', component: () => import('../views/reports/TenantsReports.vue') },
+        { path: 'angel', component: () => import('../views/reports/AngelReports.vue') },
+        {
+          path: 'units',
+          component: () => import('../views/reports/UnitsReports.vue')
+        },
+        {
+          path: 'contracts',
+          component: () => import('../views/reports/ContractsReports.vue')
+        }
+       
+      ]
     },
     {
       path: '/settings',

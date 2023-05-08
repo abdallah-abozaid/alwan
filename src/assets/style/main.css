@@ -210,9 +210,13 @@ input[type='number']::-webkit-outer-spin-button {
   margin-bottom: 1.5rem;
 }
 .input label {
+  font-size: 1.1rem;
   display: block;
   color: #000;
   margin-bottom: 0.5rem;
+}
+.modal .input label {
+  font-size: 1rem;
 }
 .input label span {
   color: red;
@@ -220,10 +224,13 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .input input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border: 2px solid #bce0fd;
   border-radius: 0.5rem;
   background-color: #f1f9ff;
+}
+.modal .input input {
+  padding: 0.5rem;
 }
 .input textarea {
   width: 100%;
@@ -271,20 +278,36 @@ input[type='number']::-webkit-outer-spin-button {
   left: 1rem;
   transform: translateY(-50%);
 }
+.password-input > div {
+  position: relative;
+}
+.password-input > div svg {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 /* responsive for labtop screens */
 @media (max-width: 1550px) {
   .input {
     margin-bottom: 1rem;
   }
-  .input label {
+  .modal .input label {
     margin-bottom: 0.3rem;
+    font-size: 1rem;
+  }
+  .input label {
     font-size: 0.9rem;
   }
 
   .input input {
-    padding: 0.4rem;
+    padding: 0.5rem;
     border: 1px solid #bce0fd;
     border-radius: 0.3rem;
+  }
+  .modal .input input {
+    padding: 0.4rem;
   }
   .input textarea {
     padding: 0.4rem;
@@ -440,6 +463,10 @@ input[type='number']::-webkit-outer-spin-button {
   color: #fff;
   padding: 0.3rem 1rem;
   border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 6rem;
 }
 .alwan-table .link a svg {
   transform: rotate(-90deg);
@@ -619,6 +646,7 @@ input[type='number']::-webkit-outer-spin-button {
     padding: 0.2rem 0.8rem;
     border-radius: 0.6rem;
     font-size: 0.85rem;
+    max-width: 5rem;
   }
   .alwan-table .link a svg {
     width: 0.5rem;

@@ -10,6 +10,10 @@
     <NewAngelModal />
     <NewUnitsModal />
     <NewContractsModal />
+    <TanentReportModal />
+    <AngelReportModal />
+    <UnitsReportModal />
+    <ContractsReportModal />
   </div>
 </template>
 
@@ -20,6 +24,10 @@ import NewTanantModal from '@/components/modals/NewTanantModal.vue'
 import NewAngelModal from '@/components/modals/NewAngelModal.vue'
 import NewUnitsModal from '@/components/modals/NewUnitsModal.vue'
 import NewContractsModal from '@/components/modals/NewContractsModal.vue'
+import TanentReportModal from '@/components/modals/TanentReportModal.vue'
+import AngelReportModal from '@/components/modals/AngelReportModal.vue'
+import UnitsReportModal from '@/components/modals/UnitsReportModal.vue'
+import ContractsReportModal from '@/components/modals/ContractsReportModal.vue'
 const route = useRoute()
 
 // to give each page 'layout'
