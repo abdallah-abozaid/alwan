@@ -54,4 +54,15 @@ export default {
     height: 0.6rem;
   }
 }
+/* responsive for ipad screens */
+@media (max-width: 992px) {
+  .page-links a {
+    font-size: 0.8rem;
+  }
+  .page-links svg {
+    margin: 0 0.3rem;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}
 </style>

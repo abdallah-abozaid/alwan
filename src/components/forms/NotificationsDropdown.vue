@@ -174,15 +174,32 @@ import IconNotification from '@/components/icons/IconNotification.vue'
     padding: 0.6rem;
     font-size: 0.8rem;
   }
+}
+
+/* responsive for ipad screens */
+@media (max-width: 992px) {
   .notRoad::after {
-    content: '';
-    position: absolute;
     top: 0.2rem;
     left: 0.2rem;
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: #ff0000;
-    border-radius: 50%;
+    width: 0.35rem !important;
+    height: 0.35rem !important;
+  }
+  .notifications .dropdown-toggle svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .notifications .dropdown-menu .all-notifications .single-notification > img {
+    width: 1.5rem;
+  }
+  .notifications .dropdown-menu .all-notifications .single-notification .name {
+    font-size: 0.8rem;
+  }
+  .notifications .dropdown-menu .all-notifications .single-notification .texts {
+    font-size: 0.6rem;
+  }
+  .notifications .dropdown-menu .all-btn {
+    font-size: 0.7rem;
   }
 }
 </style>

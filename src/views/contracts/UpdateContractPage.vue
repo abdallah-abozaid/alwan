@@ -123,4 +123,35 @@ import IconAccountStatment from '@/components/icons/IconAccountStatment.vue'
     width: 0.15rem;
   }
 }
+/* responsive for ipad screens */
+@media (max-width: 992px) {
+  .children-page {
+    display: block;
+  }
+  .children-page .links {
+    width: 100%;
+  }
+  .children-page .content {
+    width: 100%;
+    padding-right: 0rem;
+  }
+  .children-page .links ul {
+    min-height: unset;
+    border-left: none;
+    margin-bottom: 2rem;
+  }
+
+  .children-page .links ul li a {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+  }
+  .children-page .links ul li a svg {
+    margin-left: 0.5rem;
+    width: 1.1rem;
+  }
+
+  .children-page .links ul li a.router-link-exact-active::after {
+    width: 0.15rem;
+  }
+}
 </style>

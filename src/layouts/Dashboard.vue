@@ -102,7 +102,6 @@ export default {
 }
 .dashboard-layout .sidebar .logo img {
   width: 79px;
-  height: 122px;
 }
 .dashboard-layout .sidebar .list {
   position: relative;
@@ -249,7 +248,6 @@ export default {
 
   .dashboard-layout .sidebar .logo img {
     width: 74px;
-    height: 117px;
   }
   .dashboard-layout .sidebar .list a {
     margin-bottom: 0.3rem;
@@ -287,5 +285,59 @@ export default {
     margin-bottom: 0.3rem;
     font-size: 0.9rem;
   }
+}
+
+/* responsive for ipad screens */
+@media (max-width: 992px) {
+  /* sidebar style */
+  .dashboard-layout .sidebar {
+    width: 22%;
+  }
+
+  .dashboard-layout .sidebar .logo img {
+    width: 64px;
+  }
+  .dashboard-layout .sidebar .list a {
+    margin-bottom: 0.2rem;
+  }
+  .dashboard-layout .sidebar .list a span {
+    padding: 0.65rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .dashboard-layout .sidebar .list a svg {
+    margin-left: 0.4rem;
+    width: 1rem;
+  }
+  .dashboard-layout .sidebar .logout button {
+    font-size: 0.8rem;
+  }
+  .dashboard-layout .sidebar .logout button svg {
+    width: 1rem;
+  }
+  .dashboard-layout .sidebar .list::after {
+    height: 0.08rem;
+  }
+  .dashboard-layout .content {
+    width: 78%;
+  }
+  .dashboard-layout .content .wrapper {
+    padding: 0rem 1rem 0 1rem;
+  }
+
+  .dashboard-layout .content .pages {
+    min-height: 95vh;
+    padding: 0.5rem 1rem;
+  }
+  .dashboard-layout .content .footer {
+    min-height: 5vh;
+  }
+  .dashboard-layout .content .footer p {
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+  }
+}
+/* responsive for phone screens */
+@media (max-width: 576px) {
 }
 </style>

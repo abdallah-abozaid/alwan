@@ -51,187 +51,188 @@
       </div>
 
       <!-- table -->
-      <table>
-        <tr class="thead">
-          <th></th>
-          <th>المالك</th>
-          <th>إسم العقار</th>
-          <th>ع. الوحدات السكنية</th>
-          <th>ع. الوحدات التجارية</th>
-          <th>عنوان العقار</th>
-          <th>رقم الجوال</th>
-          <th>المزيد</th>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">الرياض</td>
-          <td class="note">0096655857425</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">الرياض</td>
-          <td class="note">0096655857425</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">الرياض</td>
-          <td class="note">0096655857425</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">الرياض</td>
-          <td class="note">0096655857425</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">الرياض</td>
-          <td class="note">0096655857425</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">الرياض</td>
-          <td class="note">0096655857425</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-      </table>
-
+      <div class="table">
+        <table>
+          <tr class="thead">
+            <th></th>
+            <th>المالك</th>
+            <th>إسم العقار</th>
+            <th>ع. الوحدات السكنية</th>
+            <th>ع. الوحدات التجارية</th>
+            <th>عنوان العقار</th>
+            <th>رقم الجوال</th>
+            <th>المزيد</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">الرياض</td>
+            <td class="note">0096655857425</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">الرياض</td>
+            <td class="note">0096655857425</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">الرياض</td>
+            <td class="note">0096655857425</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">الرياض</td>
+            <td class="note">0096655857425</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">الرياض</td>
+            <td class="note">0096655857425</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">الرياض</td>
+            <td class="note">0096655857425</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
       <!-- pagination -->
       <div class="pagination">
         <div class="steps">

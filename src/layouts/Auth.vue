@@ -87,4 +87,34 @@ export default {
     height: 1.1rem;
   }
 }
+/* responsive for ipad screens */
+@media (max-width: 992px) {
+  .auth-layout > svg:first-of-type {
+    top: -14%;
+    right: -14%;
+  }
+  .auth-layout > svg:last-of-type {
+    bottom: -14%;
+    left: -14%;
+  }
+  .auth-layout .header {
+    top: 2rem;
+    left: 1rem;
+  }
+}
+/* responsive for phone screens */
+@media (max-width: 576px) {
+  .auth-layout > svg:first-of-type {
+    top: -22%;
+    right: -22%;
+  }
+  .auth-layout > svg:last-of-type {
+    bottom: -22%;
+    left: -22%;
+  }
+  .auth-layout .header {
+    top: 1rem;
+    left: 1rem;
+  }
+}
 </style>

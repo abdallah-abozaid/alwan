@@ -434,4 +434,59 @@ import IconContracts from '@/components/icons/IconContracts.vue'
     font-size: 0.8rem;
   }
 }
+/* responsive for ipad screens */
+@media (max-width: 992px) {
+  .dashboard-page .boxes {
+    flex-wrap: wrap;
+  }
+  .dashboard-page .boxes .box {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+
+  .dashboard-page .boxes .box .content .icon {
+    width: 2.4rem;
+    border-radius: 0.4rem;
+    margin-left: 0.4rem;
+  }
+  .dashboard-page .boxes .box .content .icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .dashboard-page .boxes .box .content .info .title {
+    font-size: 0.78rem;
+  }
+  .dashboard-page .boxes .box .content .info .num {
+    font-size: 1.7rem;
+  }
+  .dashboard-page .boxes .box .percentage {
+    font-size: 0.8rem;
+  }
+
+  /* statistics */
+  .dashboard-page .statistics .title {
+    font-size: 1.1rem;
+  }
+
+  .dashboard-page .statistics .cards .card .card-title {
+    font-size: 0.9rem;
+  }
+  .dashboard-page .statistics .cards .card .chart img {
+    width: 50%;
+  }
+
+  .dashboard-page .statistics .cards .card .list li {
+    font-size: 0.75rem;
+  }
+
+  .dashboard-page .statistics .cards .card .list li > span {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  .dashboard-page .statistics .add-btn button svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 </style>

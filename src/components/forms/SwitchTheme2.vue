@@ -158,4 +158,44 @@ export default {
     left: 25px;
   }
 }
+/* responsive for ipad screens */
+@media (max-width: 992px) {
+  .switch2 > label {
+    font-size: 0.95rem;
+  }
+  .switch2 > div {
+    width: 2rem;
+    height: 1.3rem;
+    margin-left: 0.5rem;
+  }
+
+  .switch2 > div label {
+    width: 2.5rem;
+    height: 1.3rem;
+  }
+
+  .switch2 > div #star {
+    width: 15px;
+    height: 15px;
+    top: 0px;
+    left: 9px;
+  }
+
+  .switch2 > div #moon {
+    bottom: 1px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .switch2 > div #moon:before {
+    width: 29px;
+    height: 29px;
+  }
+
+  .switch2 > div #switch:checked + label #star {
+    top: 3.5px;
+    left: 22px;
+  }
+}
 </style>

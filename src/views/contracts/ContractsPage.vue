@@ -51,260 +51,261 @@
       </div>
 
       <!-- table -->
-      <table>
-        <tr class="thead">
-          <th></th>
-          <th>إسم العقار</th>
-          <th>رقم الوحدة</th>
-          <th>رقم العقد</th>
-          <th>تاريخ بداية العقد</th>
-          <th>تاريخ نهاية العقد</th>
-          <th>حالة العقد</th>
-          <th>إستمراية العقد</th>
-          <th>المزيد</th>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">2-5-2022</td>
-          <td class="note">10-8-2022</td>
-          <td class="link">
-            <RouterLink to="/contracts/1"
-              >تحديث
-              <IconArrow color="#fff" />
-            </RouterLink>
-          </td>
-          <td class="link">
-            <a href="/"
-              >منتهي
-              <IconArrow color="#fff" />
-            </a>
-          </td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">2-5-2022</td>
-          <td class="note">10-8-2022</td>
-          <td class="link">
-            <RouterLink to="/contracts/1"
-              >تحديث
-              <IconArrow color="#fff" />
-            </RouterLink>
-          </td>
-          <td class="link">
-            <a href="/"
-              >منتهي
-              <IconArrow color="#fff" />
-            </a>
-          </td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">2-5-2022</td>
-          <td class="note">10-8-2022</td>
-          <td class="link">
-            <RouterLink to="/contracts/1"
-              >تحديث
-              <IconArrow color="#fff" />
-            </RouterLink>
-          </td>
-          <td class="link">
-            <a href="/"
-              >منتهي
-              <IconArrow color="#fff" />
-            </a>
-          </td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">2-5-2022</td>
-          <td class="note">10-8-2022</td>
-          <td class="link">
-            <RouterLink to="/contracts/1"
-              >تحديث
-              <IconArrow color="#fff" />
-            </RouterLink>
-          </td>
-          <td class="link">
-            <a href="/"
-              >منتهي
-              <IconArrow color="#fff" />
-            </a>
-          </td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">2-5-2022</td>
-          <td class="note">10-8-2022</td>
-          <td class="link">
-            <RouterLink to="/contracts/1"
-              >تحديث
-              <IconArrow color="#fff" />
-            </RouterLink>
-          </td>
-          <td class="link">
-            <a href="/"
-              >منتهي
-              <IconArrow color="#fff" />
-            </a>
-          </td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>عمارة البر</td>
-          <td>8</td>
-          <td>8</td>
-          <td class="note">2-5-2022</td>
-          <td class="note">10-8-2022</td>
-          <td class="link">
-            <a href="/"
-              >تحديث
-              <IconArrow color="#fff" />
-            </a>
-          </td>
-          <td class="link">
-            <a href="/"
-              >منتهي
-              <IconArrow color="#fff" />
-            </a>
-          </td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-      </table>
-
+      <div class="table">
+        <table>
+          <tr class="thead">
+            <th></th>
+            <th>إسم العقار</th>
+            <th>رقم الوحدة</th>
+            <th>رقم العقد</th>
+            <th>تاريخ بداية العقد</th>
+            <th>تاريخ نهاية العقد</th>
+            <th>حالة العقد</th>
+            <th>إستمراية العقد</th>
+            <th>المزيد</th>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">2-5-2022</td>
+            <td class="note">10-8-2022</td>
+            <td class="link">
+              <RouterLink to="/contracts/1"
+                >تحديث
+                <IconArrow color="#fff" />
+              </RouterLink>
+            </td>
+            <td class="link">
+              <a href="/"
+                >منتهي
+                <IconArrow color="#fff" />
+              </a>
+            </td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">2-5-2022</td>
+            <td class="note">10-8-2022</td>
+            <td class="link">
+              <RouterLink to="/contracts/1"
+                >تحديث
+                <IconArrow color="#fff" />
+              </RouterLink>
+            </td>
+            <td class="link">
+              <a href="/"
+                >منتهي
+                <IconArrow color="#fff" />
+              </a>
+            </td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">2-5-2022</td>
+            <td class="note">10-8-2022</td>
+            <td class="link">
+              <RouterLink to="/contracts/1"
+                >تحديث
+                <IconArrow color="#fff" />
+              </RouterLink>
+            </td>
+            <td class="link">
+              <a href="/"
+                >منتهي
+                <IconArrow color="#fff" />
+              </a>
+            </td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">2-5-2022</td>
+            <td class="note">10-8-2022</td>
+            <td class="link">
+              <RouterLink to="/contracts/1"
+                >تحديث
+                <IconArrow color="#fff" />
+              </RouterLink>
+            </td>
+            <td class="link">
+              <a href="/"
+                >منتهي
+                <IconArrow color="#fff" />
+              </a>
+            </td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">2-5-2022</td>
+            <td class="note">10-8-2022</td>
+            <td class="link">
+              <RouterLink to="/contracts/1"
+                >تحديث
+                <IconArrow color="#fff" />
+              </RouterLink>
+            </td>
+            <td class="link">
+              <a href="/"
+                >منتهي
+                <IconArrow color="#fff" />
+              </a>
+            </td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>عمارة البر</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="note">2-5-2022</td>
+            <td class="note">10-8-2022</td>
+            <td class="link">
+              <a href="/"
+                >تحديث
+                <IconArrow color="#fff" />
+              </a>
+            </td>
+            <td class="link">
+              <a href="/"
+                >منتهي
+                <IconArrow color="#fff" />
+              </a>
+            </td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
       <!-- pagination -->
       <div class="pagination">
         <div class="steps">

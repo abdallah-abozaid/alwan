@@ -48,78 +48,79 @@
       </div>
 
       <!-- table -->
-      <table>
-        <tr class="thead">
-          <th></th>
-          <th>العنصر</th>
-          <th>نوع المصروف</th>
-          <th>تاريخ المصروف</th>
-          <th>قيمة المصروف</th>
-          <th>ملاحظات</th>
-          <th>تحمل التكلفة</th>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td class="note">توثيق العقد</td>
-          <td>قسط رقم 1</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td class="note">توثيق العقد</td>
-          <td>قسط رقم 1</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td class="note">توثيق العقد</td>
-          <td>قسط رقم 1</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td class="note">توثيق العقد</td>
-          <td>قسط رقم 1</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td class="note">توثيق العقد</td>
-          <td>قسط رقم 1</td>
-        </tr>
-      </table>
-
+      <div class="table">
+        <table>
+          <tr class="thead">
+            <th></th>
+            <th>العنصر</th>
+            <th>نوع المصروف</th>
+            <th>تاريخ المصروف</th>
+            <th>قيمة المصروف</th>
+            <th>ملاحظات</th>
+            <th>تحمل التكلفة</th>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td class="note">توثيق العقد</td>
+            <td>قسط رقم 1</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td class="note">توثيق العقد</td>
+            <td>قسط رقم 1</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td class="note">توثيق العقد</td>
+            <td>قسط رقم 1</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td class="note">توثيق العقد</td>
+            <td>قسط رقم 1</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td class="note">توثيق العقد</td>
+            <td>قسط رقم 1</td>
+          </tr>
+        </table>
+      </div>
       <!-- pagination -->
       <div class="pagination">
         <div class="steps">

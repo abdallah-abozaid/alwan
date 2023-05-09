@@ -44,97 +44,98 @@
       </div>
 
       <!-- table -->
-      <table>
-        <tr class="thead">
-          <th></th>
-          <th>التاريخ</th>
-          <th>عدد الدفعات</th>
-          <th>المصروفات</th>
-          <th>الأجور</th>
-          <th>رصيد المالك</th>
-          <th>رصيد المستأجر</th>
-          <th>الوصف</th>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>20-2-2022</td>
-          <td>4</td>
-          <td class="note">100</td>
-          <td class="note">400</td>
-          <td class="note">6000</td>
-          <td>200</td>
-          <td class="note">نسبة المكتب أجور الإدارة</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>20-2-2022</td>
-          <td>4</td>
-          <td class="note">100</td>
-          <td class="note">400</td>
-          <td class="note">6000</td>
-          <td>200</td>
-          <td class="note">نسبة المكتب أجور الإدارة</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>20-2-2022</td>
-          <td>4</td>
-          <td class="note">100</td>
-          <td class="note">400</td>
-          <td class="note">6000</td>
-          <td>200</td>
-          <td class="note">نسبة المكتب أجور الإدارة</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>20-2-2022</td>
-          <td>4</td>
-          <td class="note">100</td>
-          <td class="note">400</td>
-          <td class="note">6000</td>
-          <td>200</td>
-          <td class="note">نسبة المكتب أجور الإدارة</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>20-2-2022</td>
-          <td>4</td>
-          <td class="note">100</td>
-          <td class="note">400</td>
-          <td class="note">6000</td>
-          <td>200</td>
-          <td class="note">نسبة المكتب أجور الإدارة</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>20-2-2022</td>
-          <td>4</td>
-          <td class="note">100</td>
-          <td class="note">400</td>
-          <td class="note">6000</td>
-          <td>200</td>
-          <td class="note">نسبة المكتب أجور الإدارة</td>
-        </tr>
-      </table>
-
+      <div class="table">
+        <table>
+          <tr class="thead">
+            <th></th>
+            <th>التاريخ</th>
+            <th>عدد الدفعات</th>
+            <th>المصروفات</th>
+            <th>الأجور</th>
+            <th>رصيد المالك</th>
+            <th>رصيد المستأجر</th>
+            <th>الوصف</th>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>20-2-2022</td>
+            <td>4</td>
+            <td class="note">100</td>
+            <td class="note">400</td>
+            <td class="note">6000</td>
+            <td>200</td>
+            <td class="note">نسبة المكتب أجور الإدارة</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>20-2-2022</td>
+            <td>4</td>
+            <td class="note">100</td>
+            <td class="note">400</td>
+            <td class="note">6000</td>
+            <td>200</td>
+            <td class="note">نسبة المكتب أجور الإدارة</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>20-2-2022</td>
+            <td>4</td>
+            <td class="note">100</td>
+            <td class="note">400</td>
+            <td class="note">6000</td>
+            <td>200</td>
+            <td class="note">نسبة المكتب أجور الإدارة</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>20-2-2022</td>
+            <td>4</td>
+            <td class="note">100</td>
+            <td class="note">400</td>
+            <td class="note">6000</td>
+            <td>200</td>
+            <td class="note">نسبة المكتب أجور الإدارة</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>20-2-2022</td>
+            <td>4</td>
+            <td class="note">100</td>
+            <td class="note">400</td>
+            <td class="note">6000</td>
+            <td>200</td>
+            <td class="note">نسبة المكتب أجور الإدارة</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>20-2-2022</td>
+            <td>4</td>
+            <td class="note">100</td>
+            <td class="note">400</td>
+            <td class="note">6000</td>
+            <td>200</td>
+            <td class="note">نسبة المكتب أجور الإدارة</td>
+          </tr>
+        </table>
+      </div>
       <!-- pagination -->
       <div class="pagination">
         <div class="steps">

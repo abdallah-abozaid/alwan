@@ -48,102 +48,103 @@
       </div>
 
       <!-- table -->
-      <table>
-        <tr class="thead">
-          <th></th>
-          <th>العنصر</th>
-          <th>دفعة رقم</th>
-          <th>تاريخ الدفعة</th>
-          <th>المبلغ المدفوع(ر.س)</th>
-          <th>الحالة</th>
-          <th>ملاحظات</th>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td>
-            <IconDone color="#0f6" />
-          </td>
-          <td class="note">تم الدفع بالكامل</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td>
-            <IconFaild color="#f01a24" />
-          </td>
-          <td class="note">تم الدفع بالكامل</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td>
-            <IconDone color="#0f6" />
-          </td>
-          <td class="note">تم الدفع بالكامل</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td>
-            <IconFaild color="#f01a24" />
-          </td>
-          <td class="note">تم الدفع بالكامل</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td>
-            <IconDone color="#0f6" />
-          </td>
-          <td class="note">تم الدفع بالكامل</td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td>10-10-2022</td>
-          <td class="note">6000</td>
-          <td>
-            <IconFaild color="#f01a24" />
-          </td>
-          <td class="note">تم الدفع بالكامل</td>
-        </tr>
-      </table>
-
+      <div class="table">
+        <table>
+          <tr class="thead">
+            <th></th>
+            <th>العنصر</th>
+            <th>دفعة رقم</th>
+            <th>تاريخ الدفعة</th>
+            <th>المبلغ المدفوع(ر.س)</th>
+            <th>الحالة</th>
+            <th>ملاحظات</th>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td>
+              <IconDone color="#0f6" />
+            </td>
+            <td class="note">تم الدفع بالكامل</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td>
+              <IconFaild color="#f01a24" />
+            </td>
+            <td class="note">تم الدفع بالكامل</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td>
+              <IconDone color="#0f6" />
+            </td>
+            <td class="note">تم الدفع بالكامل</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td>
+              <IconFaild color="#f01a24" />
+            </td>
+            <td class="note">تم الدفع بالكامل</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td>
+              <IconDone color="#0f6" />
+            </td>
+            <td class="note">تم الدفع بالكامل</td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>10-10-2022</td>
+            <td class="note">6000</td>
+            <td>
+              <IconFaild color="#f01a24" />
+            </td>
+            <td class="note">تم الدفع بالكامل</td>
+          </tr>
+        </table>
+      </div>
       <!-- pagination -->
       <div class="pagination">
         <div class="steps">
@@ -224,104 +225,105 @@
       </div>
 
       <!-- table -->
-      <table>
-        <tr class="thead">
-          <th></th>
-          <th>العنصر</th>
-          <th>مبلغ الدفعة</th>
-          <th>المبلغ المدفوع(ر.س)</th>
-          <th>المبلغ المتبقي (ر.س)</th>
-          <th>تاريخ الدفع</th>
-          <th>ملاحظات</th>
-          <th>تحصيل</th>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td class="note">6000</td>
-          <td>
-            <span class="btn-secondary px-5 py-1">0.00</span>
-          </td>
-          <td>10-8-2022</td>
-          <td class="note">تم الدفع بالكامل</td>
-          <td>
-            <button class="btn btn-primary px-4">حفظ</button>
-          </td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td class="note">6000</td>
-          <td>
-            <span class="btn-secondary px-5 py-1">0.00</span>
-          </td>
-          <td>10-8-2022</td>
-          <td class="note">تم الدفع بالكامل</td>
-          <td>
-            <button class="btn btn-primary px-4">حفظ</button>
-          </td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td class="note">6000</td>
-          <td>
-            <span class="btn-secondary px-5 py-1">0.00</span>
-          </td>
-          <td>10-8-2022</td>
-          <td class="note">تم الدفع بالكامل</td>
-          <td>
-            <button class="btn btn-primary px-4">حفظ</button>
-          </td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td class="note">6000</td>
-          <td>
-            <span class="btn-secondary px-5 py-1">0.00</span>
-          </td>
-          <td>10-8-2022</td>
-          <td class="note">تم الدفع بالكامل</td>
-          <td>
-            <button class="btn btn-primary px-4">حفظ</button>
-          </td>
-        </tr>
-        <!-- row -->
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>1</td>
-          <td>1</td>
-          <td class="note">6000</td>
-          <td>
-            <span class="btn-secondary px-5 py-1">0.00</span>
-          </td>
-          <td>10-8-2022</td>
-          <td class="note">تم الدفع بالكامل</td>
-          <td>
-            <button class="btn btn-primary px-4">حفظ</button>
-          </td>
-        </tr>
-      </table>
-
+      <div class="table">
+        <table>
+          <tr class="thead">
+            <th></th>
+            <th>العنصر</th>
+            <th>مبلغ الدفعة</th>
+            <th>المبلغ المدفوع(ر.س)</th>
+            <th>المبلغ المتبقي (ر.س)</th>
+            <th>تاريخ الدفع</th>
+            <th>ملاحظات</th>
+            <th>تحصيل</th>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td class="note">6000</td>
+            <td>
+              <span class="btn-secondary px-5 py-1">0.00</span>
+            </td>
+            <td>10-8-2022</td>
+            <td class="note">تم الدفع بالكامل</td>
+            <td>
+              <button class="btn btn-primary px-4">حفظ</button>
+            </td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td class="note">6000</td>
+            <td>
+              <span class="btn-secondary px-5 py-1">0.00</span>
+            </td>
+            <td>10-8-2022</td>
+            <td class="note">تم الدفع بالكامل</td>
+            <td>
+              <button class="btn btn-primary px-4">حفظ</button>
+            </td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td class="note">6000</td>
+            <td>
+              <span class="btn-secondary px-5 py-1">0.00</span>
+            </td>
+            <td>10-8-2022</td>
+            <td class="note">تم الدفع بالكامل</td>
+            <td>
+              <button class="btn btn-primary px-4">حفظ</button>
+            </td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td class="note">6000</td>
+            <td>
+              <span class="btn-secondary px-5 py-1">0.00</span>
+            </td>
+            <td>10-8-2022</td>
+            <td class="note">تم الدفع بالكامل</td>
+            <td>
+              <button class="btn btn-primary px-4">حفظ</button>
+            </td>
+          </tr>
+          <!-- row -->
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td class="note">6000</td>
+            <td>
+              <span class="btn-secondary px-5 py-1">0.00</span>
+            </td>
+            <td>10-8-2022</td>
+            <td class="note">تم الدفع بالكامل</td>
+            <td>
+              <button class="btn btn-primary px-4">حفظ</button>
+            </td>
+          </tr>
+        </table>
+      </div>
       <!-- pagination -->
       <div class="pagination">
         <div class="steps">

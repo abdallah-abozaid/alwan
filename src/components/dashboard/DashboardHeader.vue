@@ -90,4 +90,25 @@ export default {
     height: 1.1rem;
   }
 }
+
+/* responsive for ipad screens */
+@media (max-width: 992px) {
+  .dashboard-header > p {
+    font-size: 1.1rem;
+  }
+
+  .dashboard-header .lang {
+    font-size: 0.95rem;
+  }
+  .dashboard-header .lang span {
+    margin-left: 0.2rem;
+  }
+  .dashboard-header .lang svg {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  .dashboard-header > div > div:not(:last-of-type) {
+    margin-left: 1rem;
+  }
+}
 </style>

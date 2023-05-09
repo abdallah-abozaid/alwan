@@ -44,140 +44,141 @@
       </div>
 
       <!-- table -->
-      <table>
-        <tr class="thead">
-          <th></th>
-          <th>الإسم كاملاً</th>
-          <th>عمود رقم 2</th>
-          <th>المزيد</th>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td class="note">111111</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تنزيل</a></li>
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td class="note">111111</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تنزيل</a></li>
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td class="note">111111</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تنزيل</a></li>
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td class="note">111111</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تنزيل</a></li>
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" class="form-check-input" />
-          </td>
-          <td>محمد ماجد حسن الأشقر</td>
-          <td class="note">111111</td>
-          <td>
-            <div class="dropdown more">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                id="dropdownlist"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <IconThreeDotes />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownlist">
-                <li><a class="dropdown-item" href="#">تنزيل</a></li>
-                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                <li><a class="dropdown-item delete" href="#">حذف</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-      </table>
-
+      <div class="table">
+        <table>
+          <tr class="thead">
+            <th></th>
+            <th>الإسم كاملاً</th>
+            <th>عمود رقم 2</th>
+            <th>المزيد</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td class="note">111111</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تنزيل</a></li>
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td class="note">111111</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تنزيل</a></li>
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td class="note">111111</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تنزيل</a></li>
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td class="note">111111</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تنزيل</a></li>
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" class="form-check-input" />
+            </td>
+            <td>محمد ماجد حسن الأشقر</td>
+            <td class="note">111111</td>
+            <td>
+              <div class="dropdown more">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownlist"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <IconThreeDotes />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownlist">
+                  <li><a class="dropdown-item" href="#">تنزيل</a></li>
+                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                  <li><a class="dropdown-item delete" href="#">حذف</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
       <!-- pagination -->
       <div class="pagination">
         <div class="steps">

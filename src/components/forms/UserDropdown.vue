@@ -98,4 +98,20 @@
     font-size: 0.8rem;
   }
 }
+/* responsive for ipad screens */
+@media (max-width: 992px) {
+  .user .dropdown-toggle img {
+    width: 1.7rem;
+  }
+  .user .dropdown-menu {
+    min-width: 10rem;
+  }
+
+  .user .dropdown-menu::after {
+    left: 2.3rem;
+  }
+  .user .dropdown-menu > div {
+    font-size: 0.75rem;
+  }
+}
 </style>
