@@ -324,7 +324,10 @@ export default {
   .dashboard-layout .content .wrapper {
     padding: 0rem 1rem 0 1rem;
   }
-
+  .dashboard-layout .content .wrapper > svg {
+    bottom: -15%;
+    left: -22%;
+  }
   .dashboard-layout .content .pages {
     min-height: 95vh;
     padding: 0.5rem 1rem;
