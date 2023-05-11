@@ -1,6 +1,7 @@
 <template>
   <div class="dashboard-page">
     <DashboardHeader title="لوحة التحكم" />
+
     <!-- boxes elements -->
     <div class="boxes">
       <!-- box -->
@@ -67,7 +68,7 @@
               <h5 class="card-title">قيمة الإيجارات</h5>
               <div>
                 <div class="chart">
-                  <img src="@/assets/imgs/chart.png" alt="chart" />
+                  <RentalValueChart />
                 </div>
                 <ul class="list">
                   <li>
@@ -89,7 +90,7 @@
               <h5 class="card-title">الوحدات</h5>
               <div>
                 <div class="chart">
-                  <img src="@/assets/imgs/chart.png" alt="chart" />
+                  <UnitsChart />
                 </div>
                 <ul class="list">
                   <li>
@@ -97,7 +98,7 @@
                     الوحدات الشاغرة 122
                   </li>
                   <li>
-                    <span style="background-color: #4791ff"></span>
+                    <span style="background-color: #ffd950"></span>
                     الوحدات المستأجرة 244
                   </li>
                 </ul>
@@ -111,7 +112,7 @@
               <h5 class="card-title">الدخل</h5>
               <div>
                 <div class="chart">
-                  <img src="@/assets/imgs/chart.png" alt="chart" />
+                  <IncomeChart />
                 </div>
                 <ul class="list">
                   <li>
@@ -133,7 +134,7 @@
               <h5 class="card-title">حالة العقد</h5>
               <div>
                 <div class="chart">
-                  <img src="@/assets/imgs/chart.png" alt="chart" />
+                  <ContractStatusChart />
                 </div>
                 <ul class="list">
                   <li>
@@ -177,13 +178,35 @@
     </div>
   </div>
 </template>
-<script setup>
+<script>
 import DashboardHeader from '@/components/dashboard/DashboardHeader.vue'
 import IconUsers from '@/components/icons/IconUsers.vue'
 import IconPlus from '@/components/icons/IconPlus.vue'
 import IconOwner from '@/components/icons/IconOwner.vue'
 import IconUnits from '@/components/icons/IconUnits.vue'
 import IconContracts from '@/components/icons/IconContracts.vue'
+import RentalValueChart from '@/components/charts/RentalValueChart.vue'
+import UnitsChart from '@/components/charts/UnitsChart.vue'
+import IncomeChart from '@/components/charts/IncomeChart.vue'
+import ContractStatusChart from '@/components/charts/ContractStatusChart.vue'
+
+export default {
+  components: {
+    RentalValueChart,
+    DashboardHeader,
+    IconUsers,
+    IconPlus,
+    IconOwner,
+    IconUnits,
+    IconContracts,
+    UnitsChart,
+    IncomeChart,
+    ContractStatusChart
+  },
+  data() {
+    return {}
+  }
+}
 </script>
 <style scoped>
 /* boxes */
@@ -253,7 +276,6 @@ import IconContracts from '@/components/icons/IconContracts.vue'
   margin: 1rem 0 2rem;
 }
 .dashboard-page .statistics .cards .card .chart {
-  text-align: center;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid #cee8fe;
   width: 80%;
@@ -392,10 +414,9 @@ import IconContracts from '@/components/icons/IconContracts.vue'
     border-bottom: 1px solid #cee8fe;
     margin: 0 auto 1rem;
   }
-  .dashboard-page .statistics .cards .card .chart img {
-    width: 60%;
+  .dashboard-page .statistics .cards .card .chart canvas {
+    height: 150px !important;
   }
-
   .dashboard-page .statistics .cards .card .list li {
     margin-bottom: 0.5rem;
     font-size: 0.8rem;
@@ -470,9 +491,6 @@ import IconContracts from '@/components/icons/IconContracts.vue'
 
   .dashboard-page .statistics .cards .card .card-title {
     font-size: 0.9rem;
-  }
-  .dashboard-page .statistics .cards .card .chart img {
-    width: 50%;
   }
 
   .dashboard-page .statistics .cards .card .list li {
