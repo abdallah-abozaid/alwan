@@ -1,5 +1,20 @@
 <template>
   <div class="dashboard-layout">
+    <!-- small-header -->
+    <div class="small-header">
+      <div class="logo">
+        <img src="@/assets/imgs/logo.svg" alt="logo" />
+      </div>
+      <button
+        data-bs-toggle="offcanvas"
+        data-bs-target="#headerOffcanvas"
+        aria-controls="offcanvasBottom"
+      >
+        <IconMenu color="#000" />
+      </button>
+    </div>
+
+    <!-- sidebar  -->
     <div class="sidebar">
       <div class="logo">
         <img src="@/assets/imgs/logo.svg" alt="logo" />
@@ -34,6 +49,8 @@
         </button>
       </div>
     </div>
+
+    <!-- content pages -->
     <div class="content">
       <div class="wrapper">
         <div class="pages"><slot /></div>
@@ -41,6 +58,71 @@
           <p>جميع الحقوق محفوظة لشركة ألوان الينابيع 2023</p>
         </div>
         <IconCircle color="#0094f6" />
+      </div>
+    </div>
+
+    <!-- offcanvas header -->
+    <div
+      class="offcanvas offcanvas-bottom"
+      tabindex="-1"
+      id="headerOffcanvas"
+      aria-labelledby="headerOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="headerOffcanvasLabel">
+          <!-- theme -->
+          <SwitchTheme2 />
+          <!-- language -->
+          <button class="lang">
+            <span>EN</span>
+            <IconGlobal />
+          </button>
+          <!-- notifications -->
+          <NotificationsDropdown />
+          <!-- user -->
+          <UserDropdown />
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="list">
+          <RouterLink to="/dashboard">
+            <span data-bs-dismiss="offcanvas">
+              <IconCombinedShap color="#646464" /> لوحة التحكم</span
+            >
+          </RouterLink>
+          <RouterLink to="/tenants">
+            <span data-bs-dismiss="offcanvas"> <IconUsers color="#646464" /> المستأجرين</span>
+          </RouterLink>
+          <RouterLink to="/angel">
+            <span data-bs-dismiss="offcanvas"><IconOwner color="#646464" /> الملاك</span>
+          </RouterLink>
+          <RouterLink to="/units">
+            <span data-bs-dismiss="offcanvas">
+              <IconUnits color="#646464" /> العقارات والوحدات</span
+            >
+          </RouterLink>
+          <RouterLink to="/contracts">
+            <span data-bs-dismiss="offcanvas"><IconContracts color="#646464" /> العقود</span>
+          </RouterLink>
+          <RouterLink to="/reports">
+            <span data-bs-dismiss="offcanvas"><IconPaper color="#646464" /> التقارير</span>
+          </RouterLink>
+          <RouterLink to="/settings">
+            <span data-bs-dismiss="offcanvas"><IconSetting color="#646464" /> الإعدادت</span>
+          </RouterLink>
+        </div>
+        <div class="logout" data-bs-dismiss="offcanvas">
+          <button>
+            <IconLogout color="#646464" />
+            تسجيل خروج
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -56,6 +138,11 @@ import IconUnits from '../components/icons/IconUnits.vue'
 import IconPaper from '../components/icons/IconPaper.vue'
 import IconSetting from '../components/icons/IconSetting.vue'
 import IconCircle from '../components/icons/IconCircle.vue'
+import IconMenu from '../components/icons/IconMenu.vue'
+import SwitchTheme2 from '@/components/forms/SwitchTheme2.vue'
+import NotificationsDropdown from '@/components/forms/NotificationsDropdown.vue'
+import UserDropdown from '@/components/forms/UserDropdown.vue'
+import IconGlobal from '@/components/icons/IconGlobal.vue'
 import { RouterLink } from 'vue-router'
 export default {
   name: 'DashboardLayout',
@@ -69,7 +156,12 @@ export default {
     IconContracts,
     IconPaper,
     IconSetting,
-    IconCircle
+    IconCircle,
+    IconMenu,
+    SwitchTheme2,
+    IconGlobal,
+    NotificationsDropdown,
+    UserDropdown
   }
 }
 </script>
@@ -81,7 +173,9 @@ export default {
   height: 100vh;
   overflow: hidden;
 }
-
+.dashboard-layout .small-header {
+  display: none;
+}
 /* sidebar style */
 .dashboard-layout .sidebar {
   width: 15%;
@@ -103,15 +197,15 @@ export default {
 .dashboard-layout .sidebar .logo img {
   width: 79px;
 }
-.dashboard-layout .sidebar .list {
+.dashboard-layout .list {
   position: relative;
 }
-.dashboard-layout .sidebar .list a {
+.dashboard-layout .list a {
   display: block;
   margin-bottom: 0.8rem;
   position: relative;
 }
-.dashboard-layout .sidebar .list a span {
+.dashboard-layout .list a span {
   display: block;
   font-size: 1rem;
   display: flex;
@@ -121,7 +215,7 @@ export default {
   position: relative;
 }
 
-.dashboard-layout .sidebar .list a.router-link-active::after {
+.dashboard-layout .list a.router-link-active::after {
   content: '';
   position: absolute;
   top: 0;
@@ -134,13 +228,13 @@ export default {
   z-index: 2;
 }
 
-.dashboard-layout .sidebar .list a.router-link-active span {
+.dashboard-layout .list a.router-link-active span {
   z-index: 3;
   position: relative;
   width: 100%;
   height: 100%;
 }
-.dashboard-layout .sidebar .list a.router-link-active span::after {
+.dashboard-layout .list a.router-link-active span::after {
   content: '';
   position: absolute;
   top: -2.2rem;
@@ -153,7 +247,7 @@ export default {
   border-bottom-right-radius: 3rem;
   z-index: 2;
 }
-.dashboard-layout .sidebar .list a.router-link-active span::before {
+.dashboard-layout .list a.router-link-active span::before {
   content: '';
   position: absolute;
   bottom: -2.5rem;
@@ -167,7 +261,7 @@ export default {
   z-index: 2;
   transform: rotate(90deg);
 }
-.dashboard-layout .sidebar .list a svg {
+.dashboard-layout .list a svg {
   margin-left: 0.5rem;
 }
 .dashboard-layout .sidebar .list::after {
@@ -180,12 +274,12 @@ export default {
   background-color: #d1d1d1;
 }
 
-.dashboard-layout .sidebar .logout {
+.dashboard-layout .logout {
   margin-top: auto;
   margin-bottom: 1rem;
   padding: 1rem;
 }
-.dashboard-layout .sidebar .logout button {
+.dashboard-layout .logout button {
   border: none;
   background-color: transparent;
   font-size: 1rem;
@@ -193,7 +287,7 @@ export default {
   align-items: center;
   justify-content: flex-start;
 }
-.dashboard-layout .sidebar .logout button svg {
+.dashboard-layout .logout button svg {
   margin-left: 0.5rem;
 }
 
@@ -342,5 +436,87 @@ export default {
 }
 /* responsive for phone screens */
 @media (max-width: 576px) {
+  .dashboard-layout {
+    display: block;
+    height: unset;
+  }
+  .dashboard-layout .sidebar {
+    display: none;
+  }
+
+  .dashboard-layout .content {
+    width: 100%;
+    min-height: unset;
+  }
+  .dashboard-layout .content .wrapper {
+    min-height: unset;
+    height: unset;
+  }
+  .dashboard-layout .content .wrapper > svg {
+    bottom: -11%;
+    left: -42%;
+    z-index: 1;
+  }
+  .dashboard-layout .content .pages {
+    min-height: 83vh;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .dashboard-layout .content .footer {
+    min-height: unset;
+    z-index: 2;
+    padding: 1rem;
+  }
+  .dashboard-layout .small-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.3rem;
+    background-color: #fff;
+    border-bottom: 2px solid #efefef;
+  }
+  .dashboard-layout .small-header .logo img {
+    width: 2.5rem;
+  }
+  .dashboard-layout .small-header button {
+    background-color: transparent;
+    border: none;
+  }
+  .dashboard-layout .small-header button svg{
+    width: 1.5rem;
+  }
+  .dashboard-layout .offcanvas-body .list a {
+    margin-bottom: 0.5rem;
+  }
+  .dashboard-layout .offcanvas-body .list a span {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  .dashboard-layout .offcanvas-body .logout {
+    padding-right: 0.3rem;
+  }
+  .dashboard-layout .offcanvas-title {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dashboard-layout .offcanvas-title .lang {
+    background-color: transparent;
+    border: none;
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .dashboard-layout .offcanvas-title .lang svg {
+    margin-right: 0.3rem;
+  }
+  .dashboard-layout .offcanvas-title .notifications {
+    margin-left: 1rem;
+  }
+  .dashboard-layout .offcanvas-body .list a.router-link-active span {
+    color: #0094f6;
+  }
 }
 </style>

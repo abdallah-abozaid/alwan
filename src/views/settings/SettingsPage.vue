@@ -95,4 +95,23 @@ import IconEye from '@/components/icons/IconEye.vue'
     padding-right: 2rem;
   }
 }
+
+/* responsive for labtop screens */
+@media (max-width: 576px) {
+ .setting-page .group {
+      display: block;
+  }
+  .setting-page .group .input{
+    width: 100%;
+  }
+  .setting-page > div {
+      padding-right: 0rem;
+  }
+  .setting-page .title {
+      margin-top: 2rem;
+  }
+  .setting-page > div {
+     justify-content: flex-end!important;
+  }
+}
 </style>

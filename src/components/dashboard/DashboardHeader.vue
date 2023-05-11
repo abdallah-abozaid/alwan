@@ -3,7 +3,7 @@
     <p>{{ title }}</p>
     <div>
       <!-- theme -->
-      <SwitchTheme2 />
+      <SwitchTheme2 v-if="isWideScreen" />
 
       <!-- language -->
       <button class="lang">
@@ -29,7 +29,24 @@ import IconGlobal from '../icons/IconGlobal.vue'
 export default {
   name: 'dashboard-header',
   props: ['title'],
-  components: { SwitchTheme2, IconGlobal, NotificationsDropdown, UserDropdown }
+  components: { SwitchTheme2, IconGlobal, NotificationsDropdown, UserDropdown },
+  data() {
+    return {
+      isWideScreen: false
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', this.checkScreenWidth)
+    this.checkScreenWidth()
+  },
+  unmounted() {
+    window.removeEventListener('resize', this.checkScreenWidth)
+  },
+  methods: {
+    checkScreenWidth() {
+      this.isWideScreen = window.innerWidth > 576
+    }
+  }
 }
 </script>
 
@@ -109,6 +126,12 @@ export default {
   }
   .dashboard-header > div > div:not(:last-of-type) {
     margin-left: 1rem;
+  }
+}
+/* responsive for phone screens */
+@media (max-width: 576px) {
+  .dashboard-header {
+    display: none;
   }
 }
 </style>

@@ -489,4 +489,11 @@ import IconContracts from '@/components/icons/IconContracts.vue'
     height: 2rem;
   }
 }
+/* responsive for phone screens */
+@media (max-width: 576px) {
+  .dashboard-page .boxes .box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
 </style>

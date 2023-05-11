@@ -429,4 +429,12 @@ export default {
     font-size: 1rem;
   }
 }
+/* responsive for labtop screens */
+@media (max-width: 576px) {
+ .btns button {
+  width: 48%;
+  padding: 0.4rem;
+    font-size: .9rem;
+  }
+}
 </style>
