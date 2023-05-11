@@ -223,6 +223,33 @@ input[type='number']::-webkit-outer-spin-button {
     padding: 0.5rem 1.5rem !important;
   }
 }
+
+/* responsive for ipad screens */
+@media (max-width: 576px) {
+  .big-modal {
+    min-width: 96%;
+    width: 96%;
+  }
+  .two-modal {
+    min-width: 96%;
+    width: 96%;
+    flex-wrap: wrap!important;
+  }
+  .two-modal .modal-content {
+    display: block;
+  }
+  .two-modal .modal-content .first-modal {
+    width: 96%;
+    margin:1rem auto 1rem;
+  }
+  .two-modal .modal-content .sec-modal {
+    width: 96%;
+    margin:1rem auto 1rem;
+  }
+  .modal .btn {
+    padding: 0.5rem 1.5rem !important;
+  }
+}
 /* ******************************************************* */
 /* input style */
 .input {
